@@ -24,6 +24,10 @@ header {
     background-color: #121212;
     height: 100px;
     padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .nav-item {
@@ -36,10 +40,44 @@ header {
 }
 
 nav {
-float: right;
+    float: right;
 }
 
 .nav-item:hover {
     color: #ffc997;
     transform: scale(1.1);
+}
+
+#hero-section {
+    height: 100vh;
+    background-image: linear-gradient(#db7e7e, #ffc997);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+}
+
+.hero-title {
+    font-size: 100px;
+    color: white;
+    text-shadow: 10px 10px 0 #e06161
+}
+
+.hero-btn {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    background-color: white;
+    width: fit-content;
+    padding: 20px 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 0 #e06161;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
 }
